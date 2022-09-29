@@ -8,6 +8,10 @@ function cameraReady(){
     gl = unityInstance.Module.ctx;
 }
 
+function cameraReset(){
+    isCameraReady = false;
+}
+
 function detectionManagerReady(){
     isDetectionManagerReady = true;
 }
