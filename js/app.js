@@ -12,6 +12,14 @@ function cameraReset(){
     isCameraReady = false;
 }
 
+function OpenFirstMask(){
+    window.open("https://app.aryel.io/3161603a-0f4e-437a-baf3-fa450442af20/mask2");
+}
+
+function OpenSecondMask(){
+    window.open("https://app.aryel.io/3161603a-0f4e-437a-baf3-fa450442af20/mask1");
+}
+
 function detectionManagerReady(){
     isDetectionManagerReady = true;
 }
