@@ -18,19 +18,23 @@
       {
         var v= document.getElementById("CustomBanner");
         var t = document.getElementById("ar-button");
+
+        var message = "";
       
         if (navigator.userAgent.match(/Android/i))
         {
           window.alert("Android");
+          message = "Android";
         }
         
         if(navigator.vendor != null && navigator.vendor.match(/Apple Computer, Inc./) && navigator.userAgent.match(/iPhone/i) || (navigator.userAgent.match(/iPod/i))) 
 
           {
             window.alert("iOS");
+            message = "iOS";
           }
         }
-        
+        unityInstance.SendMessage("Bridge", "SendToUnity", message);
         window.onload = showOrHideDiv;
     </script>
 
