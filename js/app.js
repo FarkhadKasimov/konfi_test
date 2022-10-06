@@ -21,7 +21,6 @@ function cameraReady(){
     }
 }
 
-
 function cameraReset(){
     isCameraReady = false;
 }
