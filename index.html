@@ -18,8 +18,6 @@
       {
         var v= document.getElementById("CustomBanner");
         var t = document.getElementById("ar-button");
-
-        var message = "";
       
         if (navigator.userAgent.match(/Android/i))
         {
@@ -34,7 +32,6 @@
             unityInstance.SendMessage("Bridge", "SendToUnity", "iOS");
           }
         }
-        unityInstance.SendMessage("Bridge", "SendToUnity", message);
         window.onload = showOrHideDiv;
     </script>
 
