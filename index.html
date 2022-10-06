@@ -13,6 +13,27 @@
       window.alert("Для корректной работы приложения запустите его в Chrome(Android)/Safari(iOS)");
     </script>
 
+    <script>
+      function showOrHideDiv()
+      {
+        var v= document.getElementById("CustomBanner");
+        var t = document.getElementById("ar-button");
+      
+        if (navigator.userAgent.match(/Android/i))
+        {
+          window.alert("Android");
+        }
+        
+        if(navigator.vendor != null && navigator.vendor.match(/Apple Computer, Inc./) && navigator.userAgent.match(/iPhone/i) || (navigator.userAgent.match(/iPod/i))) 
+
+          {
+            window.alert("iOS");
+          }
+        }
+        
+        window.onload = showOrHideDiv;
+    </script>
+
   </head>
 
   <body style="margin: 0px; overflow: hidden;">
