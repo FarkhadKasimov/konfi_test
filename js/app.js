@@ -19,8 +19,8 @@ function cameraReady(){
     {
         unityInstance.SendMessage("Bridge", "SendToUnity", "iOS");
     }
-    }
 }
+
 
 function cameraReset(){
     isCameraReady = false;
