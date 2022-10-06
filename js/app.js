@@ -6,6 +6,20 @@ let gl = null;
 function cameraReady(){
     isCameraReady = true;
     gl = unityInstance.Module.ctx;
+
+    var v= document.getElementById("CustomBanner");
+    var t = document.getElementById("ar-button");
+      
+    if (navigator.userAgent.match(/Android/i))
+    {
+        unityInstance.SendMessage("Bridge", "SendToUnity", "Android");
+    }
+        
+    if(navigator.vendor != null && navigator.vendor.match(/Apple Computer, Inc./) && navigator.userAgent.match(/iPhone/i) || (navigator.userAgent.match(/iPod/i))) 
+    {
+        unityInstance.SendMessage("Bridge", "SendToUnity", "iOS");
+    }
+    }
 }
 
 function cameraReset(){
