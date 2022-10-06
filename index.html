@@ -21,14 +21,12 @@
       
         if (navigator.userAgent.match(/Android/i))
         {
-          window.alert("Android");
           unityInstance.SendMessage("Bridge", "SendToUnity", "Android");
         }
         
         if(navigator.vendor != null && navigator.vendor.match(/Apple Computer, Inc./) && navigator.userAgent.match(/iPhone/i) || (navigator.userAgent.match(/iPod/i))) 
 
           {
-            window.alert("iOS");
             unityInstance.SendMessage("Bridge", "SendToUnity", "iOS");
           }
         }
